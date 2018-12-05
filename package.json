@@ -1,0 +1,47 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "cross-env ENV=development PORT=80 roadhog server",
+    "test": "cross-env ENV=test roadhog build",
+    "build": "cross-env ENV=production roadhog build",
+    "lint": "eslint --ext .js src test",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "antd-mobile": "^2.2.5",
+    "babel-plugin-import": "^1.9.1",
+    "cross-env": "^5.2.0",
+    "dva": "^2.4.0",
+    "immutable": "^3.8.2",
+    "qs": "^6.5.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "babel-plugin-dva-hmr": "^0.3.2",
+    "eslint": "^4.14.0",
+    "eslint-config-umi": "^0.1.1",
+    "eslint-plugin-flowtype": "^2.34.1",
+    "eslint-plugin-import": "^2.6.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.1.0",
+    "husky": "^0.12.0",
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
+    "mini-css-extract-plugin": "^0.4.4",
+    "mockjs": "^1.0.1-beta3",
+    "redbox-react": "^1.4.3",
+    "roadhog": "^2.0.0"
+  },
+  "_env_": {
+    "development": {
+      "API_BASE": "http://member-application-service.dd01.work/api/v1"
+    },
+    "test": {
+      "API_BASE": "https://member-application-service.hktester.com/api/v1"
+    },
+    "production": {
+      "API_BASE": "https://member-application-service.wezeroplus.com/api/v1" 
+    }
+  }
+}

@@ -1,0 +1,44 @@
+@charset 'utf-8';
+@import "../../assets/style/base.less";
+
+.login-bar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: round(100rem / @ui-width, 2);
+  box-sizing: border-box;
+  padding: round(30rem / @ui-width, 2) 0;
+  .box {
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: round(166rem / @ui-width, 2);
+    height: round(40rem / @ui-width, 2);
+    text-align: center;
+    line-height: round(40rem / @ui-width, 2);
+    position: relative;
+    border: 1px solid rgba(65, 70, 75, 0.2);
+    border-radius: round(4rem / @ui-width, 2);
+    .icon {
+      position: absolute;
+      top: round(10rem / @ui-width, 2);
+      left: round(23rem / @ui-width, 2);
+      display: inline-block;
+      width: round(20rem / @ui-width, 2);
+      height: round(20rem / @ui-width, 2);
+    }
+    .icon-mail {
+      background: url(../../assets/img/icon_mail.png) no-repeat;
+      background-size: 100% 100%;
+    }
+    .icon-phone {
+      background: url(../../assets/img/icon_phone.png) no-repeat;
+      background-size: 100% 100%;
+    }
+    .txt {
+      position: absolute;
+      left: round(53rem / @ui-width, 2);
+      color: #41464b;
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+@charset 'utf-8';
+@import "../../assets/style/base.less";
+
+.third-party-login {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: round(120rem / @ui-width, 2);
+  box-sizing: border-box;
+  padding: 0 round(16rem / @ui-width, 2);
+  .title{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: round(14rem / @ui-width, 2);
+    font-weight: bold;
+    margin: 0 auto;
+    height: round(20rem / @ui-width, 2);
+    line-height: round(20rem / @ui-width, 2);
+    margin-bottom: round(30rem / @ui-width, 2);
+  }
+  .box {
+    float: left;
+    &:nth-child(2){
+      float: right;
+    }
+    box-sizing: border-box;
+    width: round(166rem / @ui-width, 2);
+    height: round(40rem / @ui-width, 2);
+    text-align: center;
+    line-height: round(40rem / @ui-width, 2);
+    position: relative;
+    border: 1px solid rgba(65, 70, 75, 0.2);
+    border-radius: round(4rem / @ui-width, 2);
+    .icon {
+      position: absolute;
+      top: round(10rem / @ui-width, 2);
+      left: round(23rem / @ui-width, 2);
+      display: inline-block;
+      width: round(20rem / @ui-width, 2);
+      height: round(20rem / @ui-width, 2);
+    }
+    .icon-facebook {
+      background: url(../../assets/img/icon_facebook.png) no-repeat;
+      background-size: 100% 100%;
+    }
+    .icon-google {
+      background: url(../../assets/img/icon_google.png) no-repeat;
+      background-size: 100% 100%;
+    }
+    .txt {
+      position: absolute;
+      left: round(53rem / @ui-width, 2);
+      color: #41464b;
+      font-size: 14px;
+    }
+  }
+}

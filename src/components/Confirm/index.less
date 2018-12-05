@@ -1,0 +1,71 @@
+@charset 'utf-8';
+@import "../../assets/style/base.less";
+
+.confirm {
+  .shadow {
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color : #41464B;
+    .box {
+      z-index: 110;
+      width: 320px;
+      height: 160px;
+      border-radius: round(2rem / @ui-width, 2);
+      position: fixed;
+      left: round(28rem / @ui-width, 2);
+      top: round(234rem / @ui-width, 2);
+      background-color: #fff;
+      .txt-box{
+        box-sizing: border-box;
+        width: 100%;
+        height: round(100rem / @ui-width, 2);
+        position: absolute;
+        left: 0;
+        top: 0;
+        .txt{
+          font-size: round(16rem / @ui-width, 2);
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          text-align: center;
+          width: round(272rem / @ui-width, 2);
+          transform: translate(-50%,-50%);
+          -webkit-transform: translate(-50%,-50%);
+          -ms-transform: translate(-50%,-50%);
+          -o-transform: translate(-50%,-50%);
+        }
+      }
+      .btn-box{
+        box-sizing: border-box;
+        width: 100%;
+        height: round(60rem / @ui-width, 2);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        .btn{
+          float: left;
+          width: 50%;
+          height: 100%;
+          font-size: round(15rem / @ui-width, 2);
+          text-align: center;
+          line-height: round(60rem / @ui-width, 2);
+          border-top: 1px solid #eee;
+          box-sizing: border-box;
+        }
+        .cancel{
+          
+          border-right: 1px solid #eee;
+        }
+        .sure{
+          color: #1772E6;
+
+        }
+      }
+    }
+  }
+}
